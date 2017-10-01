@@ -20,4 +20,6 @@ COPY . /usr/src/app
 RUN chmod +x /usr/src/app/docker-entrypoint.sh
 ENTRYPOINT ["/usr/src/app/docker-entrypoint.sh"]
 
+EXPOSE 3000
+
 CMD [ "npm", "start" ]
